@@ -1,0 +1,213 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(24, 187, 228);
+}
+.weather{
+    background-color: rgb(255, 255, 255);
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.weather-heading{
+    /* margin-left: 20px; */
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    font-size: 20px;
+    color: rgb(0, 138, 202);
+    font-weight: bold;
+    border-bottom: 2px solid rgb(235, 221, 221);
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+}
+.weather-heading .fa-arrow-left{
+    padding-right: 10px;
+    margin-left: 10px;
+    display: none;
+}
+.head{
+    margin-left: 20px;
+}
+.weatherAsk{
+    /* border: 1px solid black; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* display: none; */
+}
+.fetching{
+    /* display: none; */
+    width: 80%;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 10px;
+    margin: 10px 0;
+    display: none;
+}
+.fetchSucc{
+    display: block;
+    background-color: rgb(181, 247, 172);
+}
+.fetchFail{
+    display: block;
+    background-color: rgb(255, 130, 130);
+}
+.fetching p{
+    text-align: center;
+    font-size: 20px;
+    color: rgb(9, 73, 0);
+}
+.input{
+    width: 80%;
+    height: 80px;
+    line-height: 40px;
+    margin: 10px 0;
+    border-radius: 10px;
+}
+.input input{
+    width: 100%;
+    height: 50%;
+    text-align: center;
+    font-size: 16px;
+    /* border: none; */
+    outline: none;
+    border: 1px solid rgb(235, 221, 221);
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+#search{
+    background-color: rgb(42, 189, 226);
+    font-weight: bold;
+}
+.lineOr{
+    width: 100%;
+    margin-top: 15px;
+    border: 1px solid rgb(235, 221, 221);
+    position: relative;
+}
+.lineOr::before{
+    content: "or";
+    position: absolute;
+    bottom: -7.5px;
+    left: 140px;
+}
+.dev-loc{
+    width: 80%;
+    height: 40px;
+    line-height: 40px;
+    margin: 10px 0;
+    background-color: rgb(24, 187, 228);
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+.dev-loc p{
+    text-align: center;
+    font-size: 18px;
+}
+.weather-result{
+    width: 100%;
+    margin: 10px 0;
+    display: none;
+}
+.weather-result .showTemp{
+    width: 80%;
+    margin: auto;
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.temDegCelc{
+    display: flex;
+}
+.location{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.loc{
+    display: flex;
+}
+#temp{
+    font-size: 50px;
+    font-weight: bold;
+}
+.celc{
+    font-size: 50px;
+    margin-left: 2px;
+}
+#typeWeather{
+    font-size: 20px;
+    margin-top: 15px;
+}
+#location{
+    font-size: 18px;
+    margin-top: 15px;
+}
+.fa-location-dot{
+    margin-top: 15px;
+}
+.fa-location-dot,.fa-temperature-empty,.fa-droplet{
+    margin-right: 5px;
+    color: rgb(24, 187, 228);
+}
+.extraInfo{
+    width: 100%;
+    display: flex;
+    border-top: 2px solid rgb(235, 221, 221);
+}
+.feelsLike{
+    border-right: 2px solid rgb(235, 221, 221);
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.feel{
+    display: flex;
+    margin-top: 10px;
+}
+#temp2{
+    font-size: 18px;
+    margin-left: 5px;
+}
+.fa-temperature-empty{
+    font-size: 20px;
+}
+.deg2{
+    font-size: 10px;
+    vertical-align: top;
+}
+.humidity{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+.humidInfo{
+    display: flex;
+    justify-content: space-around;
+}
+#humid{
+    font-size: 18px;
+}
+.humidText{
+    width: 70px;
+}

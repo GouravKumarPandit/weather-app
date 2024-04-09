@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="weather.js" defer></script>
+    <title>Weather Website</title>
+</head>
+<body>
+    <div class="container">
+        <div class="weather">
+            <div class="weather-heading">
+                <i class="fa-solid fa-arrow-left"></i>
+                <p class="head">Weather App</p>
+            </div>
+
+            <div class="weatherAsk">
+                <div class="fetching">
+                    <p id="getDet"></p>
+                </div>
+                <form action="" class="input">
+                    <input type="text" name="" id="inputSearch" placeholder="Enter city name">
+                    <input type="button" value="Search" id="search">
+                </form>
+                <div class="lineOr"></div>
+                <div class="dev-loc">
+                    <p id="devLoc">Get Device Location</p>
+                </div>
+            </div>
+
+            <div class="weather-result">
+                <div class="showTemp">
+                    <div class="temDegCelc">
+                        <p id="temp">21 </p>
+                        <span class="deg">o</span> 
+                        <span class="celc">C</span>
+                    </div>
+                    <div class="location">
+                        <p id="typeWeather">Mopderate,Rain</p>
+                        <div class="loc">
+                            <i class="fa-solid fa-location-dot"></i><p id="location">Jamshedpur, Jharkhand</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="extraInfo">
+                    <div class="feelsLike">
+                        <div class="">
+                            <i class="fa-solid fa-temperature-empty"></i>
+                        </div>
+                        <div class="">
+                            <div class="feel">
+                                <p id="temp2">21</p>
+                                <span class="deg2">o</span> <span class="celc2">C</span>
+                            </div>    
+                            <p id="feelsLike">Feels Like</p>
+                        </div>
+                    </div>
+                    <div class="humidity">
+                        <div class="humidInfo">
+                            <i class="fa-sharp fa-solid fa-droplet"></i>
+                            <span id="humid">93%</span>
+                        </div>
+                        <div class="humidText">
+                            <p>Humidity</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
